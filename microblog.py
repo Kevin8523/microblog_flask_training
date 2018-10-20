@@ -1,0 +1,1 @@
+from app import app # From app (app package or folder we created) import app (app variable from __init__.py)
