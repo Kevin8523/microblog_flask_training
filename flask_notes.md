@@ -1,5 +1,5 @@
 # Running Flask
-***Documentation:*** https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world 
+***Documentation:*** https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world : Currently on Chapter 4
 
 ## Virtual Environment
 1. Always create a virtual environment (venv) when starting a flask program
@@ -40,3 +40,5 @@ ctrl+c
 ctrl+d (mac) ctrl+z (win)
 exit interpreter 
 
+
+## Databases
