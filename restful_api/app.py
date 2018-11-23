@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, render_template
 
 app = Flask(__name__) # __name__ gives each file a unique name
 
@@ -14,6 +14,10 @@ stores = [
 		]
 	}
 ]
+
+@app.route('/')
+def home():
+	return render_template('index.html')
 
 # POST - used to receive data
 # GET - used to send data back only
@@ -56,7 +60,7 @@ def create_item_in_store(name):
 				'name': request_data['name'],
 				'price': request_data['price']
 			}
-			stores['items'].append(new_item)
+			store['items'].append(new_item)
 			return jsonify(new_item)
 	return jsonify({'message': 'store not found'})
 
